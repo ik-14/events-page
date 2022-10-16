@@ -1,0 +1,146 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'raleway';
+}
+
+.body-dark{
+  background-color: #212121;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.header-dark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #212121;
+  color: whitesmoke;
+}
+
+button{
+  background-color: rgb(134, 167, 179);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.button-dark{
+  background-color: #343232;
+}
+
+.filter{
+  margin-top: 10px;
+  display: flex;
+}
+
+.filter-title{
+  box-sizing: border-box;
+  padding: 20px;
+  width: 30%;
+  height: 98vh;
+  background-color: lightblue;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-title-dark{
+  background-color:#343232;
+}
+
+.events-cont{
+  height: 98vh;
+  display: grid;
+  grid: auto / repeat(2,1fr);
+  width: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 1.3rem;
+  background-color: rgba(198, 122, 122, 0.435);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+
+.events-cont-dark{
+  background-color: #272525;
+}
+
+
+.event-card-light{
+  box-sizing: border-box;
+  height: 95vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+  background-color: rgba(198, 122, 122, 0.435);
+}
+
+
+.event-card-dark{
+  background-color: rebeccapurple;
+}
+
+.images{
+  width: 100%;
+  height: 68vh;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+
+.bold-text{
+  font-weight: 900;
+}
+
+.date{
+  background-color: rgba(0, 0, 0, 0.62);
+  padding: 20px;
+  position: relative;
+  top: -40%;
+  width: 92%;
+  justify-self: center;
+}
+
+@media (max-width: 1024px) {
+  .events-cont {
+    grid: auto / 1fr;
+  }
+}
+
+@media (max-width:460px) {
+  .event-card{
+    font-size: 0.9rem;
+  }
+  .filter-title{
+    display:none;
+  }
+  .events-cont{
+    width: 100%;
+  }
+}
+
